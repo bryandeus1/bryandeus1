@@ -15,49 +15,6 @@ read -sp 'Digite a senha desejada para o banco de dados: ' DB_PASSWORD
 echo
 read -p 'Digite seu domínio (exemplo: suodominio.com): ' DOMAIN
 
-# Variáveis do Pterodactyl
-export GITHUB_SOURCE="v1.0.0"
-export SCRIPT_RELEASE="v1.0.0"
-export GITHUB_BASE_URL="https://raw.githubusercontent.com/pterodactyl-installer/pterodactyl-installer"
-
-LOG_PATH="/var/log/pterodactyl-installer.log"
-
-# Verificar se o curl está instalado
-if ! [ -x "$(command -v curl)" ]; then
-  echo "* curl é necessário para que este script funcione."
-  echo "* instale usando apt (Debian e derivados) ou yum/dnf (CentOS)"
-  exit 1
-fi
-
-# Sempre remover lib.sh, antes de baixá-lo
-rm -rf /tmp/lib.sh
-curl -sSL -o /tmp/lib.sh "$GITHUB_BASE_URL"/master/lib/lib.sh
-# shellcheck source=lib/lib.sh
-source /tmp/lib.sh
-
-execute() {
-  echo -e "\n\n* pterodactyl-installer $(date) \n\n" >>$LOG_PATH
-
-  [[ "$1" == *"canary"* ]] && export GITHUB_SOURCE="master" && export SCRIPT_RELEASE="canary"
-  update_lib_source
-  run_ui "${1//_canary/}" |& tee -a $LOG_PATH
-
-  if [[ -n $2 ]]; then
-    echo -e -n "* Instalação de $1 concluída. Você deseja prosseguir com a instalação de $2? (s/N): "
-    read -r CONFIRM
-    if [[ "$CONFIRM" =~ [Ss] ]]; then
-      execute "$2"
-    else
-      error "Instalação de $2 abortada."
-      exit 1
-    fi
-  fi
-}
-
-# Instalação do Pterodactyl
-titulo "Instalação do Pterodactyl"
-execute "panel"
-
 # Atualizar e instalar pacotes necessários
 titulo "Atualizando o sistema e instalando pacotes necessários"
 sudo apt update -y
