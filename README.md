@@ -35,7 +35,8 @@ liguagens
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" title="Php" alt="Php" width="40" height="40"/> 
   
   eu quero trabalhar na Arcade lunar
-  <img src="https://arcadelunar.com/assets/img/logoarcade.png" title="arcadeluna" alt="arcadeluna" width="100" height="100"/> 
+  <img src="https://arcadelunar.com/assets/img/logoarcade.png" title="arcadeluna" alt="arcadeluna" width="100" height="100"/> ]
+   eu quero trabalhar na Arcade lunar
 </div>
 
 </div>
