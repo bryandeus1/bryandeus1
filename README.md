@@ -33,6 +33,8 @@ liguagens
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" title="Python" alt="Python" width="40" height="40"/>
 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" title="Php" alt="Php" width="40" height="40"/> 
+
+  <img src="https://arcadelunar.com/assets/img/logoarcade.png" title="arcadeluna" alt"arcadeluna" width="40" height="40"/>
 </div>
 
 </div>
