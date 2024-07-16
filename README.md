@@ -47,26 +47,6 @@ liguagens
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original-wordmark.svg" title="Haskell" alt="Haskell" width="40" height="40"/>
 </div>
 
- ### :fire: SOBRE O MEU PERFIL:
-
-<br><br>
-
-<div align="center">
-
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com?user=alizin-dev&theme=dark&hide_border=false&date_format=j%20M%5B%20Y%5D&locale=pt-br">
-
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=alizin-dev&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alizin-dev&layout=compact&langs_count=4&theme=dark"/>
-
-  
-
-  
-
-  ![Snake animation](https://github.com/Supraofc/Supraofc/blob/output/github-contribution-grid-snake.svg)
-
-  
-
 </div>
 
 
