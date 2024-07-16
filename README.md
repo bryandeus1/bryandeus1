@@ -1,6 +1,6 @@
 <div id="header" align="center">
 
-  <img src="https://telegra.ph/file/2374532682a1f74093351.jpg" width="100"/>
+  <img src="https://avatars.githubusercontent.com/u/174481886?s=96&v=4" width="100"/>
 
 </div>
 
